@@ -1,0 +1,78 @@
+*{
+    overflow-x: hidden;
+}
+.post__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post{
+    width: 65%;
+}
+
+.post img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+aside{
+    width: 30%;
+    background-color: rgb(49, 44, 44);
+    height: max-content;
+    color: white;
+}
+
+.form_search{
+    width: 95%;
+}
+
+.article{
+    background-color: var(--green-black);
+    display: flex;
+    margin: 10px 0px;
+    height: 110px;
+    color: white;
+}
+
+.article img{
+    height: 100%;
+    width: 150px;
+}
+.article h3, .article p{
+    margin: 5px 10px;
+    font-size: 1.5em;
+    font-weight: 100;
+
+}
+
+/* .article .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+aside h2{
+    text-align: center;
+}
+
+.post .post__title{
+    font-size: 2.5em;
+    color: rgb(23, 51, 23);
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 800px){
+    /* html{
+        width: 100%;
+    } */
+    .post__container{
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .post, aside{
+        width: 100%;
+        margin: 5px 0px;
+        overflow: hidden;
+    }
+}

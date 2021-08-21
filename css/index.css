@@ -1,0 +1,546 @@
+/* General CSS */
+:root {
+  --green: rgb(10, 118, 10);
+  --red-orange: rgb(107, 61, 44);
+  --black: rgb(58, 57, 57);
+  --green-black: rgb(1, 39, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.active {
+  background-color: green !important;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: block;
+  padding: 5px 10px;
+  font-size: 25px;
+  color: white;
+  background-color: var(--red-orange);
+  width: 150px;
+  text-align: center;
+  margin: 0;
+}
+
+.group_name {
+  font-weight: bold;
+  font-size: 1.9em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid green;
+  color: var(--green-black);
+}
+
+/* article */
+
+article .article__extra {
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  width: 390px;
+  height: 410px;
+  background-color: var(--green-black);
+  margin: 10px 10px;
+  color: white;
+}
+
+article .article__text p,
+article .article__text h2 {
+  margin: 8px 2px;
+  color: white;
+}
+
+article .article__extra__img {
+  height: 100%;
+  width: 75%;
+  margin-left: 10px;
+  position: relative;
+}
+
+article .extra__text p {
+  margin: 4px 2px;
+}
+
+article .article__extra__img img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+article .btn {
+  margin: 5px 0px;
+}
+
+article .article__extra {
+  width: 100%;
+  height: 48%;
+}
+
+article .article__extra__img {
+  width: 80%;
+}
+.articles__content {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+article .article__extra__img::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--green-black);
+  opacity: 0.4;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* _________________Header________________________ */
+/* header */
+.navbar__content {
+  overflow: hidden;
+  height: 85px;
+  padding: 5px 0px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--green) 2px solid;
+}
+
+.navbar__logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.navbar__logo__img {
+  object-fit: contain;
+  height: 100%;
+}
+
+.nav__items {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.nav__item {
+  display: block;
+  font-size: 1.6em;
+  text-decoration: none;
+  margin-left: 1.5em;
+  color: white;
+  font-weight: 900;
+  background-color: var(--green-black);
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: ease-in-out 0.2s;
+}
+.nav__item:hover {
+  background-color: var(--red-orange);
+}
+
+.navbar__logo__name {
+  color: white;
+  background-color: green;
+  font-weight: 900;
+  text-decoration: underline var(--green-black);
+  font-size: 2.2em;
+  margin-left: 2px;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+/* banner*/
+.banner {
+  background: url('../assets/banner/andre.jpeg') no-repeat 0 -150px;
+  background-size: 100%;
+  height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  line-height: 100px;
+  font-weight: bold;
+}
+/* hero */
+
+.hero {
+  background-color: var(--green-black);
+  padding: 20px 0px;
+}
+.hero__content {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  font-size: 1.8em;
+  text-transform: capitalize;
+  font-weight: 800;
+  line-height: 1.2em;
+  height: 35vh;
+  color: var(--green);
+  color: white;
+  /* align-items: center; */
+}
+
+.hero__content p {
+  margin: 0.5em 0px;
+}
+
+.hero__content span {
+  color: rgb(0, 0, 0);
+}
+
+.hero__header {
+  background: url(../assets/home/green-tree.png) no-repeat 0 -500px;
+  background-size: 100%;
+  height: 85px;
+  border-radius: 10px;
+  font-size: 2em;
+  text-align: center;
+  line-height: 85px;
+}
+
+.hero__header p {
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.explorer:hover {
+  background-color: var(--black);
+}
+
+/* _____________________categories_____________________________ */
+.categories {
+  padding: 25px 0px;
+}
+
+.categories__content {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+}
+
+.category {
+  width: 300px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 5px 10px;
+}
+
+.category__content {
+  background-color: rgb(9, 8, 8, 0.7);
+  height: 90%;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.category__content:hover {
+  /* background-color: rgba(160, 160, 37, 0.5); */
+  background-color: var(--green-black);
+  opacity: 0.5;
+}
+
+.category__title {
+  font-weight: bold;
+  font-size: 1.9em;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.category__content p {
+  font-size: 22px;
+  text-align: left;
+  padding: 2px;
+}
+
+/* _________________________________Footer_______________________________________ */
+footer {
+  /* height: 20vh; */
+  background-color: var(--green-black);
+  margin-top: 4em;
+}
+
+.footer {
+  padding: 1.2em 0px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*____________________________   menu and exit_________________________ */
+.menu {
+  display: none;
+}
+
+/* ______________________________Contact_page__________________________________ */
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact__small_inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__small_inputs input {
+  width: 350px;
+  padding: 5px;
+  font-size: 1.2em;
+  outline: none;
+  margin: 20px auto;
+}
+
+.contact textarea {
+  margin: auto;
+  font-size: 1.4em;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact input[type='submit'] {
+  display: block;
+  width: 500px;
+  margin: 10px auto;
+  font-size: 2em;
+  background-color: var(--green-black);
+  color: white;
+  font-weight: bold;
+}
+
+/* ____________________________Login______________________________ */
+.account__form {
+  color: white;
+  width: 80%;
+  /* background-color: blue; */
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-size: 1.4em;
+  text-align: center;
+  padding: 30px;
+}
+
+.account__form form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--green-black);
+  padding: 30px;
+}
+.account__form label {
+  display: block;
+}
+
+.keep {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+
+.account__form input {
+  width: 300px;
+  margin: 8px auto;
+  padding: 3px;
+  outline: 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.account__form input[type='submit'] {
+  background-color: var(--green);
+  border-radius: 25px;
+  color: white;
+}
+
+.account__form h2 {
+  font-size: 1.2em;
+  margin: 20px auto;
+}
+
+.alternative {
+  width: 400px;
+  background-color: var(--green-black);
+  height: max-content;
+  padding: 30px;
+}
+
+.alternative .btn {
+  width: max-content;
+  border-radius: 30px;
+  margin: 10px auto;
+}
+
+.account__form .status{
+  background-color: var(--green-black);
+  color: white;
+  font-size: 1.1em;
+}
+
+/* ________________________media queries______________________________________ */
+@media only screen and (max-width: 800px) {
+  html {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  /*_________________________Header__________________________ */
+  .nav__items {
+    display: none;
+  }
+  .navbar__logo__name {
+    position: absolute;
+    left: 20%;
+    right: 22%;
+    font-size: 1.8em;
+    text-align: center;
+  }
+  .menu {
+    display: block;
+    width: 70px;
+    z-index: 3;
+    position: fixed;
+    right: 5px;
+    top: 15px;
+  }
+
+  .show_menu {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 50%;
+  }
+
+  .nav__item,
+  .nav__items {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  /* banner */
+  .banner {
+    text-align: left;
+    line-height: 40px;
+    font-size: 2em;
+  }
+  /* hero */
+  .hero__content {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 10px;
+    height: auto;
+  }
+  /* .hero__header{
+      line-height: 50px;
+  } */
+  .hero__content div,
+  .hero__header {
+    padding: 5px 5px;
+    width: 100%;
+    /* margin-top: 50px; */
+    line-height: 50px;
+    text-align: left;
+  }
+  .hero__content div {
+    margin-top: 30px;
+  }
+  /* categiries */
+  .category {
+    width: 100%;
+    margin: auto;
+  }
+  .category__content p {
+    font-size: 2em;
+    width: 100%;
+  }
+  .categories__content{
+    width: 100%;
+  }
+  /* articles */
+  article p {
+    font-size: 1.5em;
+  }
+  article {
+    height: max-content;
+    padding: 5px;
+    width: 100%;
+  }
+  article h2 {
+    font-size: 2em;
+    padding: 5px 0px;
+  }
+  /* footer */
+
+  footer .col {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 1.2em;
+    overflow: hidden;
+  }
+
+  /* __________________Contact Page _______________________________________*/
+  .contact {
+    flex-direction: column;
+  }
+  .contact iframe,
+  .contact textarea,
+  .message,
+  .contact__small_inputs input,
+  .contact input[type='submit'] {
+    width: 100%;
+    padding: 5px;
+  }
+
+  /* account */
+  .account__form,
+  .account__form input,
+  .alternative,
+  .account__form form, .keep {
+    width: 100%;
+    margin: 5px 0px;
+  }
+}

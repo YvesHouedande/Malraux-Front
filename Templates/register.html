@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar__content">
+          <div class="navbar__logo">
+            <img
+              src="../assets/logo/logo.png"
+              alt="logo"
+              class="navbar__logo__img"
+            />
+            <h1 class="navbar__logo__name">
+              <span>André</span>
+              Malraux
+            </h1>
+          </div>
+          <nav>
+            <ul class="nav__items show_menu">
+              <li><a href="home.html" class="nav__item active">Accueil</a></li>
+              <li><a href="blog.html" class="nav__item">Articles</a></li>
+              <li><a href="creation.html" class="nav__item">Creation</a></li>
+              <li><a href="contact.html" class="nav__item active">Contact</a></li>
+              <li><a href="login.html" class="nav__item">Compte</a></li>
+            </ul>
+          </nav>
+
+          <img src="../assets/logo/menu.svg" alt="hamburger" class="menu" />
+        </div>
+      </div>
+      <!-- ________________banner_________________________ -->
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="account__form">
+          <form action="">
+            <h2>Creer Un Compte</h2>
+            <label for="username">Nom D'utilisateur:</label>
+            <input type="text" id="username" />
+            <!--  -->
+            <label for="address">Numero/Email:</label>
+            <input type="text" id="address" />
+            <!--  -->
+            <label for="password">Mot De Passe:</label>
+            <input type="password" id="password" />
+            <!--  -->
+            <label for="confirm">Confirmez le Mot De Passe:</label>
+            <input type="password" id="confirm" />
+            <!--  -->
+            <select name="" id="" class="status">
+              <option value="">Votre Status</option>
+              <option value="">Educateur</option>
+              <option value="">Prof</option>
+              <option value="">Eleve</option>
+            </select>
+            <div class="keep">
+              <input type="checkbox" name="" id="keep" checked />
+              <label for="keep">rester conneter</label>
+            </div>
+            <input type="submit" value="Connexion" />
+          </form>
+          <div class="alternative">
+            <h2>Vous avez un Compte ?</h2>
+            <h2>Coonecter Vous!</h2>
+            <a href="../Templates/login.html" class="btn">Se Connecter</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

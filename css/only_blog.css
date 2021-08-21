@@ -1,0 +1,136 @@
+.main_row .articles__content{
+    justify-content: space-between;
+    /* flex-wrap: nowrap; */
+}
+
+form{
+    background-color: green;
+    padding: 5px;
+    border-radius: 30px;
+
+}
+.search_input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: green;
+    font-size: 1.5em;
+    color: white;
+    padding: 0 5px;
+}
+
+.main_row article{
+    width: 60%;
+}
+.main_row article img{
+    object-fit: cover;
+}
+
+.form_search{
+    /* background-color: rgb(136, 21, 21); */
+    background-color: var(--green-black);
+    width: 30%;
+    border-radius: 30px;
+}
+
+.category, .category__content{
+    width: 100%;
+    margin: 0;
+    height: max-content;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    line-height: 4em;
+}
+.category{
+    margin-top: 5px;
+}
+
+
+
+main{
+    padding: 50px 0px;
+}
+
+/* ____________pagination */
+.pagination{
+    background-color: black;
+}
+.pagination__items{
+    width: max-content;
+    margin: auto;
+}
+
+.pagination__item{
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    background-color: var(--green-black);
+    font-weight: 900;
+}
+
+.author_filter{
+    background-color: black;
+    text-align: right;
+}
+.author_filter__select{
+    width: 300px;
+    font-size: 1.5em;
+    background-color: var(--green-black);
+    color: white;
+}
+
+.pagination__item:hover{
+    background-color: green;
+}
+
+@media only screen and (max-width: 800px){
+    html{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+
+    .main_row .articles__content{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .form_search{
+        width: 95%;
+        margin: auto;
+    }
+    .main_row article{
+        width: 95%;
+        margin: 30px auto;
+    }
+    .author_filter, .author_filter__select{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .pagination{
+        width: 90%;
+        margin: auto;
+    }
+    .pagination__items{
+        width: 100%;
+        text-align: center;
+    }
+    .footer, .footer .col{
+        width: 100%;
+        overflow: hidden;
+    }
+    article{
+        width: 100%;
+    }
+    article img{
+    object-fit: cover;
+    width: 100%;
+}
+}
+
+
+
+

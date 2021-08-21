@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar__content">
+          <div class="navbar__logo">
+            <img
+              src="../assets/logo/logo.png"
+              alt="logo"
+              class="navbar__logo__img"
+            />
+            <h1 class="navbar__logo__name">
+              <span>André</span>
+              Malraux
+            </h1>
+          </div>
+          <nav>
+            <ul class="nav__items show_menu">
+              <li><a href="home.html" class="nav__item">Accueil</a></li>
+              <li><a href="blog.html" class="nav__item">Articles</a></li>
+              <li><a href="creation.html" class="nav__item">Creation</a></li>
+              <li><a href="contact.html" class="nav__item active">Contact</a></li>
+              <li><a href="login.html" class="nav__item">Compte</a></li>
+            </ul>
+          </nav>
+
+          <img src="../assets/logo/menu.svg" alt="hamburger" class="menu" />
+        </div>
+      </div>
+      <!-- ________________banner_________________________ -->
+    </header>
+
+    <main class="contact">
+      <div class="container">
+        <div class="message">
+          <form action="">
+            <div class="contact__small_inputs">
+              <input type="email" name="" id=" " placeholder="Votre Nom" />
+              <input
+                type="email"
+                name=""
+                id=" "
+                placeholder="Votre Email/Numero"
+              />
+              <input type="email" name="" id=" " placeholder="Le Sujet" />
+            </div>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              rows="10"
+              cols="50"
+              placeholder="Enter Message"
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'Tapez Le Message'"
+            ></textarea>
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1651.003320275728!2d-3.979366084760332!3d5.356270766519792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ec99c336f4b9%3A0x3a47227f5a57a619!2sGROUPE%20SCOLAIRE%20ANDRE%20MALRAUX!5e0!3m2!1sfr!2sci!4v1629123122172!5m2!1sfr!2sci"
+          width="600"
+          height="450"
+          style="border: 0;"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </main>
+
+    <!-- ______________________________Footer__________________________________ -->
+    <footer>
+      <div class="container">
+        <!--  -->
+        <div class="footer">
+          <div class="col-1 col">
+            <h3>Ecole André Malraux</h3>
+            <p>
+              <span>Locatlisation:</span>
+              Route d'Attoban, à 100 m du rond point
+              <br />
+              - Riviéra 2. Cocody - 22 BP 286 Abidjan 22. Abidjan -
+            </p>
+            <p>
+              <span>Contact:</span>
+              (+225) 27 22 43 21 60. Fax : (+225) 22 43 12 68.
+            </p>
+          </div>
+          <!--  -->
+          <div class="col-2 col">
+            <h3>Contact du Developpeur</h3>
+            <p>
+              <span>Email:</span>
+              yveshouedandedocteur@gmail.com
+            </p>
+            <p>
+              <span>Numero:</span>
+              +225 85-98-76-52
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
